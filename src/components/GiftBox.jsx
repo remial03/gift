@@ -88,7 +88,7 @@ export function GiftBox({ flowers }) {
           /* ── Open Gift Experience ── */
           <motion.div
             key="open-gift"
-            className="relative"
+            className="relative flex flex-col items-center"
             variants={contentVariants}
             initial="hidden"
             animate="visible"
@@ -96,7 +96,7 @@ export function GiftBox({ flowers }) {
           >
             {/* Message boxes — offset + floating */}
             <div
-              className="flex flex-col gap-3 mb-4 relative"
+              className="flex flex-col gap-3 mb-4 relative mx-auto"
               style={{ width: "min(290px, calc(100vw - 2rem))" }}
             >
               {MESSAGES.map((msg, i) => {
