@@ -91,7 +91,7 @@ export function SuitcasePlayer({ isOpen, className = "" }) {
 
   return (
     <div className={`relative ${className}`}>
-      <audio ref={audioRef} src="/Always.mp3" loop preload="auto" />
+      <audio ref={audioRef} src={`${import.meta.env.BASE_URL}Always.mp3`} loop preload="auto" />
 
       <div className="sc-scale-wrap">
         <div className="sc-wrapper">
